@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: gray;
+  background: lightblue;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#contact {
+  background: white;
+  padding: 25px;
+  margin: 100px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 250px;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  text-align: center;
+  width: 40%;
+  border: none;
+  background: orange;
+  color: white;
+  margin: 0 0;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+#contact h1 {
+  font-size: 27px;
+  font-weight: 600;
+  color: black;
+}
+
+.para {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.para1 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}

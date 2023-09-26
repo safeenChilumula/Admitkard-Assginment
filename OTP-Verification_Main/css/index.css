@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+.input-item {
+  width: 343px;
+  height: 44px;
+  border: 2px solid #ffd37d;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  gap: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.anchor-item {
+  cursor: pointer;
+  text-decoration: underline;
+  color: orange;
+}
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: gray;
+  background: lightblue;
+}
+
+.container {
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="tel"],
+#contact button[type="submit"] {
+  font: 500 "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: white;
+  padding: 35px;
+  margin: 100px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="tel"] {
+  width: 100%;
+  border: none;
+  background: white;
+  margin: 0 0 5px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="tel"]:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  text-align: center;
+  width: 70%;
+  border: none;
+  background: orange;
+  color: white;
+  margin: 0 0;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#contact button[type="submit"]:hover {
+  background: green;
+}
+
+#contact input:focus {
+  outline: 0;
+  border: 1px solid gray;
+}
+
+.flag-container {
+  width: 100%;
+}
+
+.intl-tel-input {
+  width: 100% !important;
+}
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}

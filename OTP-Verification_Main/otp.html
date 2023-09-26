@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AdmitKard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("input").keyup(function () {
+          if (this.value.length == $(this).attr("maxlength")) {
+            $(this).next().focus();
+          }
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="./css/otp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="contact" method="POST" onsubmit="return check()">
+        <br /><br />
+
+        <img
+          style="
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 170px;
+            height: 150px;
+          "
+          src="images/otpverify.JPG"
+          alt="OTPVerify image"
+        />
+        <h2>Please verify Mobile number</h2>
+
+        <h4>An OTP is sent to +917896781234</h4>
+        <div style="margin-bottom: 30px">
+          <a
+            style="
+              cursor: pointer;
+              text-decoration: underline;
+              color: orange;
+              margin-bottom: 84px;
+            "
+            href="index.html"
+            >Change Phone Number</a
+          >
+        </div>
+        <div id="form">
+          <input
+            id="a"
+            type="text"
+            maxlength="1"
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            required
+          />
+          <input
+            id="b"
+            type="text"
+            maxlength="1"
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            required
+          />
+          <input
+            id="c"
+            type="text"
+            maxlength="1"
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            required
+          />
+          <input
+            id="d"
+            type="text"
+            maxlength="1"
+            size="1"
+            min="0"
+            max="9"
+            pattern="[0-9]{1}"
+            required
+          />
+          <br /><br />
+          <button type="submit" class="btn btn-primary btn-embossed">
+            Verify
+          </button>
+        </div>
+        <br /><br />
+        <p style="color: black">
+          Didn't Recieve the code?
+          <a
+            style="cursor: pointer; text-decoration: underline; color: orange"
+            onclick="location.reload()"
+          >
+            Resend</a
+          >
+        </p>
+        <br />
+      </form>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
